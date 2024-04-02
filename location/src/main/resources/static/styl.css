@@ -14,10 +14,88 @@ body {
     height: 100vh;
     position: relative;
     font-family: var(--pops);
+    background-color: #f2f1ec;
 }
 
 :root {
     --pops: "Poppins", sans-serif;
     --nuns: "Nunito", sans-serif;
     --monts: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: #fa8b03
+}
+
+header {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(241, 235, 213, 0.577);
+}
+
+#landing-page {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.location-div, .result-div {
+    border-radius: 5px;
+    border: 2px solid rgba(220, 220, 220, 0.396);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.sub-header {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: var(--nuns) ;
+}
+
+.location-button {
+    padding: .9rem 3rem;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: var(--nuns);
+    background-color: dodgerblue;
+    color: white;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.location-button:hover,
+.location-button:active {
+    background-color: rgb(8, 110, 212);
+}
+
+#userLocation {
+    padding: 16px 20px;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #161616;
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#userLocation:focus {
+    outline: 0 solid transparent;
 }
