@@ -46,22 +46,22 @@ header {
     gap: 2rem;
 }
 
-.location-div, .result-div {
+.location-div, .result-div, .result-parent {
     border-radius: 5px;
     border: 2px solid rgba(220, 220, 220, 0.396);
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
 }
 
-.sub-header {
+.sub-header, .result-header {
     font-size: 1.5em;
     letter-spacing: 1px;
     font-weight: 500;
-    font-family: var(--nuns) ;
+    font-family: var(--monts) ;
 }
 
 .location-button {
@@ -92,10 +92,25 @@ header {
     font-weight: 400;
     font-size: 1.1em;
     letter-spacing: 1px;
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: 100%;
 }
 
 #userLocation:focus {
     outline: 0 solid transparent;
+}
+
+.result-parent {
+    padding: 1rem;
+}
+
+.result-child {
+    border-radius: 5px;
+    border: 2px solid rgba(220, 102, 6, 0.396);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
 }
