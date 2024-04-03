@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${longitude},${latitude}.json?access_token=${accessToken}`)
 
-                    .then(response => response.json)
+                    .then(response => response.json())
                     .then(data => {
                         if (data.features && data.features.length > 0) {
                             outputDiv.value = data.features[0].place_name;
@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         console.error("Error occurred while fetching your data: ", error);
                         outputDiv.value = "Error Experienced"
                     })
-
-                outputDiv.value = position.coords.latitude;
                 
             });
         } else {
