@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: var(--pops);
+    background-color: #ffffff;
+}
+
+button, #placeOfInterest {
+    cursor: pointer;
+    padding: 8px 0;
+    width: 250px;
+    background-color: black;
+    color: white;
+    border: 0 solid black;
+    border-radius: 5px;
+    font-family: var(--nuns);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 500px;
+}
+
+:root {
+    --pops: "Poppins", sans-serif;
+    --nuns: "Nunito", sans-serif;
+    --monts: "Montserrat", sans-serif;
+}
+
+header {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #161616;
+}
+
+#landing-page {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.description-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;   
+}
+
+.description-para {
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-align: center;
+    max-width: 800px;
+    line-height: 30px;
+    width: 100%;
+    border-top: 2px solid rgb(234, 234, 234);
+    border-bottom: 2px solid rgb(234, 234, 234);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.location-div, .option-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border-top: 2px solid rgb(234, 234, 234);
+    border-bottom: 2px solid rgb(234, 234, 234);
+}
+
+.sub-header {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #161616;
+}
+
+#placeOfInterest {
+    font-size: 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: 0 solid transparent;
+    cursor: pointer;
+}
+
+#userLocation {
+    margin-top: 1rem;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    font-family: var(--pops);
+    font-size: 1.1em;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.5px;
+    border: 2px solid #161616;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.result-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#map {
+    max-width: 600px;
+    width: 100%;
+    max-height: 500px;
+    min-height: 400px;
+    height: 100%;
+    border: 0 solid transparent;
+    border-radius: 10px;
+}
