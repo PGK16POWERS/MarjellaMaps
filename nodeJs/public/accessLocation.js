@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchLocation.addEventListener("click", () => {
         fullPassFunc();
-    })
+    });
 
 })
 
@@ -63,5 +63,5 @@ function fullPassFunc() {
     var userCurrentLocation = localStorage.getItem("user_coords");
     var placeOfInterest = localStorage.getItem("place_of_interest");
 
-    
+
 }
