@@ -95,7 +95,7 @@ function showMap() {
                     new mapboxgl.Marker(bankIcons)
                         .setLngLat([longitudez, latitudez])
                         .addTo(map);
-                })
+                });
             });
 
     });
