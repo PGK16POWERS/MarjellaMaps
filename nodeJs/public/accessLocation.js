@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    defaultMap()
+
     const accessUserLocationButton = document.querySelector("#locationButton");
     const selectOption = document.querySelector("#placeOfInterest");
     const searchLocation = document.querySelector("#search_nearest_poi");
-    
+    mapboxgl.accessToken = 'pk.eyJ1IjoicXVpY2sta3V0IiwiYSI6ImNsdWl1Zmp0YzA4cXIyaW85cWx1N2NqYWkifQ.oktkdVTSggmud8PqxSB5dg';
     
     selectOption.addEventListener("change", () => {
         console.log(selectOption.value);
@@ -18,7 +20,39 @@ document.addEventListener("DOMContentLoaded", () => {
         fullPassFunc();
     });
 
-})
+    showMap();
+
+});
+
+function defaultMap() {
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [ 28.0456, -26.2044],
+        zoom: 16
+      });
+}
+
+function showMap() {
+    navigator.geolocation.getCurrentPosition((position) => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [longitude || 28.0456, latitude || -26.2044],
+          zoom: 16
+        });
+
+        new mapboxgl.Marker()
+            .setLngLat([longitude, latitude])
+            .addTo(map);
+
+    });
+}
+    
 
 function accessUserLocation() {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -36,6 +70,7 @@ function accessUserLocation() {
         var coords = JSON.stringify(coordsObj);
 
         localStorage.setItem("user_coords", coords);
+
     });
 }
 
