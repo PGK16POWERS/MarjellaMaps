@@ -131,6 +131,34 @@ h1 {
     padding: 1rem;
 }
 
+.rd-btn-div {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poi-icon-div {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #161616;
+    width: 50px;
+    height: 100%;
+    border: 0 solid transparent;
+    border-radius: 3px;
+    display:flex;
+    justify-content: center;
+    align-items: center
+}
+
+#poi-icon {
+    color: white;
+}
+
 #map {
     max-width: 600px;
     width: 100%;
