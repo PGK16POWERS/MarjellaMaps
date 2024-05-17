@@ -1,51 +1,51 @@
 [
     {
-        "name": "Nedbank",
+        "name": "Nedbank ATM",
         "latitude": -26.001914,
         "longitude": 28.012387
     },
     {
-        "name": "Absa Bank Fourways Mall",
+        "name": "Absa ATM Fourways Mall",
         "latitude": -26.008325,
         "longitude": 28.006820
     },
     {
-        "name": "FNB Fourways Gardens",
+        "name": "FNB ATM Fourways Gardens",
         "latitude": -26.014706,
         "longitude": 28.011038
     },
     {
-        "name": "Nedbank Fourways View",
+        "name": "Nedbank ATM Fourways View",
         "latitude": -26.000907,
         "longitude": 28.003385
     },
     {
-        "name": "Capitec Bank Fourways Pineslopes",
+        "name": "Capitec ATM Fourways Pineslopes",
         "latitude": -26.013417,
         "longitude": 28.006580
     },
     {
-        "name": "Standard Bank Fourways Mall",
+        "name": "Standard Bank ATM Fourways Mall",
         "latitude": -26.006812,
         "longitude": 28.005742
     },
     {
-        "name": "Investec Bank Fourways",
+        "name": "Investec ATM Fourways",
         "latitude": -26.012925,
         "longitude": 28.015324
     },
     {
-        "name": "African Bank Fourways Mall",
+        "name": "African Bank ATM Fourways Mall",
         "latitude": -26.009215,
         "longitude": 28.007112
     },
     {
-        "name": "Bidvest Bank Fourways",
+        "name": "Bidvest ATM Fourways",
         "latitude": -26.003918,
         "longitude": 28.010255
     },
     {
-        "name": "RMB Private Bank Fourways",
+        "name": "RMB Private Bank ATM Fourways",
         "latitude": -26.007411,
         "longitude": 28.008214
     }

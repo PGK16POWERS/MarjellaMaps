@@ -1,37 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    defaultMap()
-
     const accessUserLocationButton = document.querySelector("#locationButton");
-    const selectOption = document.querySelector("#placeOfInterest");
-    const searchLocation = document.querySelector("#search_nearest_poi");
-    const poiIconParent = document.querySelector("#poi-icon");
-    
-    selectOption.addEventListener("change", () => {
-        console.log(selectOption.value);
-        localStorage.setItem("place_of_interest", selectOption.value);
-        poiIconParent.textContent = selectOption.value;
-    });
 
     accessUserLocationButton.addEventListener("click", () => {
         showMap();
     });
 
-    searchLocation.addEventListener("click", () => {
-        fullPassFunc();
-    });
-
 });
-
-function defaultMap() {
-    mapboxgl.accessToken = 'pk.eyJ1IjoicXVpY2sta3V0IiwiYSI6ImNsdWl1Zmp0YzA4cXIyaW85cWx1N2NqYWkifQ.oktkdVTSggmud8PqxSB5dg';
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [ 28.0456, -26.2044],
-        zoom: 16
-      });
-}
 
 function showMap() {
 
@@ -76,36 +51,8 @@ function showMap() {
             .setLngLat([longitude, latitude])
             .addTo(map);
 
-
-
-        // SET LOCATION FOR EACH BANK
-        fetch("jsonFiles/bankLocations.json")
-            .then(response =>response.json())
-            .then(data => {
-    
-                data.forEach(doc => {
-                    const bankIcons = document.createElement("img");
-                    bankIcons.setAttribute("src","/assets/bank_icon.svg");
-                    bankIcons.style.width = "30px";
-                    bankIcons.style.height = "30px";
-
-                    var latitudez = doc.latitude;
-                    var longitudez = doc.longitude;
-
-                    new mapboxgl.Marker(bankIcons)
-                        .setLngLat([longitudez, latitudez])
-                        .addTo(map);
-                });
-            });
-
     });
 
 }
 
-function fullPassFunc() {
-    var userCurrentLocation = localStorage.getItem("user_coords");
-    var placeOfInterest = localStorage.getItem("place_of_interest");
-
-
-}
 

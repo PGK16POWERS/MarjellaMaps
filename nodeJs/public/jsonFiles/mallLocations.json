@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Fourways Mall",
+        "latitude": -26.010345,
+        "longitude": 28.006789
+    },
+    {
+        "name": "Cedar Square",
+        "latitude": -26.015876,
+        "longitude": 28.013234
+    },
+    {
+        "name": "Broadacres Shopping Centre",
+        "latitude": -26.018765,
+        "longitude": 28.012345
+    },
+    {
+        "name": "Fourways Crossing",
+        "latitude": -26.012345,
+        "longitude": 28.005432
+    },
+    {
+        "name": "The Buzz Shopping Centre",
+        "latitude": -26.007654,
+        "longitude": 28.015432
+    },
+    {
+        "name": "Design Quarter",
+        "latitude": -26.016789,
+        "longitude": 28.008765
+    },
+    {
+        "name": "Montecasino",
+        "latitude": -26.025432,
+        "longitude": 28.012876
+    },
+    {
+        "name": "Douglasdale Village Shopping Centre",
+        "latitude": -26.020123,
+        "longitude": 28.009876
+    },
+    {
+        "name": "Nicolway Bryanston",
+        "latitude": -26.021234,
+        "longitude": 28.015123
+    },
+    {
+        "name": "The Leaping Frog Shopping Centre",
+        "latitude": -26.022345,
+        "longitude": 28.011234
+    }
+]

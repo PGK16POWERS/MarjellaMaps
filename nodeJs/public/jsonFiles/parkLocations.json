@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Fourways Gardens Park",
+        "latitude": -26.013574,
+        "longitude": 28.012987
+    },
+    {
+        "name": "Kingfisher Park",
+        "latitude": -26.011234,
+        "longitude": 28.006543
+    },
+    {
+        "name": "Lonehill Park",
+        "latitude": -26.014432,
+        "longitude": 28.010543
+    },
+    {
+        "name": "Norscot Koppies and Kingfisher Nature Reserve",
+        "latitude": -26.017890,
+        "longitude": 28.012210
+    },
+    {
+        "name": "Rietfontein Nature Reserve",
+        "latitude": -26.018123,
+        "longitude": 28.015432
+    },
+    {
+        "name": "Bryanston Pine Forest",
+        "latitude": -26.011543,
+        "longitude": 28.019876
+    },
+    {
+        "name": "Witkoppen Park",
+        "latitude": -26.012321,
+        "longitude": 28.008765
+    },
+    {
+        "name": "Magaliessig Park",
+        "latitude": -26.010987,
+        "longitude": 28.006123
+    },
+    {
+        "name": "Paulshof Park",
+        "latitude": -26.014876,
+        "longitude": 28.011987
+    },
+    {
+        "name": "Douglasdale Park",
+        "latitude": -26.015432,
+        "longitude": 28.009654
+    }
+]
