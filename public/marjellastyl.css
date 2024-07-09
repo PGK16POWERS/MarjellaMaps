@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: var(--pops);
+    background-color: #ffffff;
+}
+
+button, #placeOfInterest {
+    cursor: pointer;
+    padding: 8px 0;
+    width: 250px;
+    background-color: black;
+    color: white;
+    border: 0 solid black;
+    border-radius: 5px;
+    font-family: var(--pops);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 500px;
+}
+
+:root {
+    --pops: "Poppins", sans-serif;
+    --nuns: "Nunito", sans-serif;
+    --monts: "Montserrat", sans-serif;
+}
