@@ -68,14 +68,14 @@ button, #placeOfInterest {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .side-menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .8rem;
+    gap: .6rem;
     width: 100%;
     transition-duration: .3s;
     border: 0 solid transparent;
@@ -90,7 +90,7 @@ button, #placeOfInterest {
 }
 
 .icon-img {
-    height: 23px;
+    height: 20px;
 }
 
 .icon-title {
