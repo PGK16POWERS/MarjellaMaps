@@ -57,7 +57,7 @@ button, #placeOfInterest {
 
 .side-menu {
     position: absolute;
-    padding: 2rem 10px;
+    padding: 1rem 10px;
     background-color: #ffffff;
     border: 0 solid transparent;
     border-radius: 0 5px 5px 0;
@@ -97,4 +97,16 @@ button, #placeOfInterest {
     font-size: .8em;
     font-weight: 500;
     letter-spacing: 1px;
+}
+
+#output-screen {
+    position: absolute;
+    border: 2px solid red;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
 }
