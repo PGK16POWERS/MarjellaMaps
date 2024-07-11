@@ -2,14 +2,14 @@
 
    <div class="input-div" id="start-location">
         <img src="/icons/location_search.svg" alt="" class="icon-img">
-        <input type="text" class="input-field" name="startLocation" id="startLocationInp" required placeholder="Set start Location">
+        <input type="text" class="input-field" name="startLocation" id="startLocationInp" required placeholder="Set start Location" (input)="getLocation()" (focus)="setFocusedInput('startLocationInp')">
         <img src="/icons/microphone.svg" alt="" class="icon-img">
         <div id="profile-div"></div>
     </div>
 
     <div class="input-div" id="end-location">
-        <img src="/icons/location_search.svg" alt="" class="icon-img">
-        <input type="text" class="input-field" name="destination" id="destinationInp" required placeholder="Destination">
+        <img src="/icons/add_location.svg" alt="" class="icon-img">
+        <input type="text" class="input-field" name="destination" id="destinationInp" required placeholder="Destination" (input)="getLocation()" (focus)="setFocusedInput('destinationInp')">
         <img src="/icons/microphone.svg" alt="" class="icon-img">
     </div> 
 
@@ -19,7 +19,14 @@
             <span class="div-title">Suggestions</span>
         </div>
 
-        <div></div>
+        <div id="location_suggestion_parent">
+
+            <div class="location_suggestion_child">
+                <img src="/icons/suggested_location.svg" alt="" class="icon-img">
+                <span id="suggestioned_location">Fourways Mall</span>
+            </div>
+
+        </div>
     </div>
 
 </section>
