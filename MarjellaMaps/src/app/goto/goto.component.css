@@ -1,0 +1,38 @@
+#end-location {
+    margin-top: 1rem;
+}
+
+#end-location .input-field {
+    width: 100%;
+}
+
+#end-location {
+    padding-right: 26px;
+}
+
+#location-output {
+    background-color: white;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .8rem;
+    padding: 12px 16px;
+    min-height: 100px;
+    margin-top: 2rem;
+}
+
+.title-div {
+    border-bottom: 2px solid gainsboro;
+    width: 100%;
+    padding: 0 0 5px 8px;
+}
+
+.div-title {
+    color: rgb(100, 100, 100);
+}
+
+.icon-img {
+    height: 20px;
+}

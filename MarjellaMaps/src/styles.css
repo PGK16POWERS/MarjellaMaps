@@ -92,24 +92,77 @@ button, #placeOfInterest {
 }
 
 .icon-img {
-    height: 20px;
+    height: 18px;
 }
 
 .icon-title {
-    font-size: .8em;
+    font-size: .7em;
     font-weight: 500;
-    letter-spacing: 1px;
 }
 
 #output-screen {
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 1rem 2rem;
     z-index: 16;
     background-color: transparent;
 }
+
+
+/* INPUT STYLES */
+
+.input-div {
+    background-color: white;
+    padding: 12px 16px;
+    height: 55px;
+    border: 0 solid transparent;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    transition-duration: .3s;
+}
+
+.input-div:hover,
+.input-div:focus,
+.input-div:active {
+    box-shadow: 0 1px 8px 1px rgba(50, 50, 50, 0.347);
+}
+
+
+.input-field {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 0 solid transparent;
+    display: flex;
+    align-items: center;
+    min-width: 250px;
+    height: 100%;
+    line-height: 100%;
+}
+
+.input-field:active,
+.input-field:hover,
+.input-field:focus {
+    outline: 0 solid transparent;
+}
+
+#profile-div {
+    background-color: #161616;
+    border: 0 solid transparent;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    margin-left: .5rem;
+}
+
+input {
+    padding-bottom: 0;
+}
+
+/* INPUT STYLES */
