@@ -125,6 +125,7 @@ button, #placeOfInterest {
     justify-content: flex-start;
     gap: 16px;
     transition-duration: .3s;
+    max-width: 401px;
 }
 
 .input-div:hover,
@@ -161,8 +162,20 @@ button, #placeOfInterest {
     margin-left: .5rem;
 }
 
-input {
-    padding-bottom: 0;
+.location_suggestion_child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.location_suggestion_child .icon-img {
+    height: 16px;
+}
+
+#suggestioned_location {
+    font-size: .9em;
+    color: #444;
+    cursor: pointer;
 }
 
 /* INPUT STYLES */
