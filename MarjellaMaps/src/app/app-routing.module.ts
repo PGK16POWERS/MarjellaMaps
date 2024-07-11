@@ -14,22 +14,22 @@ const routes: Routes = [
   },
   {
     title:'Go To',
-    path: '',
+    path: 'go-to',
     component: GotoComponent
   },
   {
     title:'Explore',
-    path: '',
+    path: 'explore',
     component: ExploreComponent
   },
   {
     title:'Saved',
-    path: '',
+    path: 'saved',
     component: SavedComponent
   },
   {
     title:'Profile',
-    path: '',
+    path: 'profile',
     component: ProfileComponent
   }
 ];

@@ -7,6 +7,7 @@
 a, li {
     list-style: none;
     text-decoration: none;
+    color: #161616;
 }
 
 body {
@@ -46,6 +47,7 @@ button, #placeOfInterest {
     bottom:0;
     border: 0 solid transparent;
     border-radius: 10px;
+    z-index: 13;
 }
 
 #main-frame {
@@ -61,7 +63,7 @@ button, #placeOfInterest {
     background-color: #ffffff;
     border: 0 solid transparent;
     border-radius: 0 5px 5px 0;
-    z-index: 99;
+    z-index: 14;
     top: 0;
     bottom: 0;
     left: 0;
@@ -101,7 +103,6 @@ button, #placeOfInterest {
 
 #output-screen {
     position: absolute;
-    border: 2px solid red;
     top: 0;
     right: 0;
     bottom: 0;
@@ -109,4 +110,6 @@ button, #placeOfInterest {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 2rem;
+    z-index: 16;
+    background-color: transparent;
 }
